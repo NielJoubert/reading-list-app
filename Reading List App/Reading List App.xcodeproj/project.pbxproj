@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A485B41BA3B12500805035 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A485B31BA3B12500805035 /* ShareViewController.swift */; };
+		72A485B71BA3B12500805035 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A485B51BA3B12500805035 /* MainInterface.storyboard */; };
+		72A485BB1BA3B12500805035 /* Share to Read.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72A485B11BA3B12500805035 /* Share to Read.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72E2FD7D1BA629E000AD0B82 /* PreProcessor.js in Resources */ = {isa = PBXBuildFile; fileRef = 72E2FD7C1BA629E000AD0B82 /* PreProcessor.js */; settings = {ASSET_TAGS = (); }; };
 		901CFE071B8385920026E01C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE061B8385920026E01C /* Article.swift */; };
 		901CFE091B83878E0026E01C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */; };
 		901CFE0B1B8390170026E01C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CFE0A1B8390170026E01C /* WebViewController.swift */; };
@@ -23,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		72A485B91BA3B12500805035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 940C9B251B478F7700D12C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A485B01BA3B12500805035;
+			remoteInfo = "Share to Read";
+		};
 		940C9B451B478F7800D12C77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 940C9B251B478F7700D12C77 /* Project object */;
@@ -32,7 +43,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		72A485BF1BA3B12500805035 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72A485BB1BA3B12500805035 /* Share to Read.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		72A485B11BA3B12500805035 /* Share to Read.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Share to Read.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A485B31BA3B12500805035 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		72A485B61BA3B12500805035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		72A485B81BA3B12500805035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E2FD7C1BA629E000AD0B82 /* PreProcessor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = PreProcessor.js; sourceTree = "<group>"; };
 		901CFE061B8385920026E01C /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		901CFE0A1B8390170026E01C /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		72A485AE1BA3B12500805035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		940C9B2A1B478F7700D12C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,11 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72A485B21BA3B12500805035 /* Share to Read */ = {
+			isa = PBXGroup;
+			children = (
+				72A485B31BA3B12500805035 /* ShareViewController.swift */,
+				72A485B51BA3B12500805035 /* MainInterface.storyboard */,
+				72E2FD7C1BA629E000AD0B82 /* PreProcessor.js */,
+				72A485B81BA3B12500805035 /* Info.plist */,
+			);
+			path = "Share to Read";
+			sourceTree = "<group>";
+		};
 		940C9B241B478F7700D12C77 = {
 			isa = PBXGroup;
 			children = (
 				940C9B2F1B478F7700D12C77 /* Reading List App */,
 				940C9B471B478F7800D12C77 /* Reading List AppTests */,
+				72A485B21BA3B12500805035 /* Share to Read */,
 				940C9B2E1B478F7700D12C77 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +133,7 @@
 			children = (
 				940C9B2D1B478F7700D12C77 /* Reading List App.app */,
 				940C9B441B478F7800D12C77 /* Reading List AppTests.xctest */,
+				72A485B11BA3B12500805035 /* Share to Read.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +186,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		72A485B01BA3B12500805035 /* Share to Read */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A485BE1BA3B12500805035 /* Build configuration list for PBXNativeTarget "Share to Read" */;
+			buildPhases = (
+				72A485AD1BA3B12500805035 /* Sources */,
+				72A485AE1BA3B12500805035 /* Frameworks */,
+				72A485AF1BA3B12500805035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Share to Read";
+			productName = "Share to Read";
+			productReference = 72A485B11BA3B12500805035 /* Share to Read.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		940C9B2C1B478F7700D12C77 /* Reading List App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940C9B4E1B478F7800D12C77 /* Build configuration list for PBXNativeTarget "Reading List App" */;
@@ -143,10 +210,12 @@
 				940C9B291B478F7700D12C77 /* Sources */,
 				940C9B2A1B478F7700D12C77 /* Frameworks */,
 				940C9B2B1B478F7700D12C77 /* Resources */,
+				72A485BF1BA3B12500805035 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				72A485BA1BA3B12500805035 /* PBXTargetDependency */,
 			);
 			name = "Reading List App";
 			productName = "Reading List App";
@@ -178,9 +247,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "ios-developers.io";
 				TargetAttributes = {
+					72A485B01BA3B12500805035 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					940C9B2C1B478F7700D12C77 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -205,11 +277,21 @@
 			targets = (
 				940C9B2C1B478F7700D12C77 /* Reading List App */,
 				940C9B431B478F7800D12C77 /* Reading List AppTests */,
+				72A485B01BA3B12500805035 /* Share to Read */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		72A485AF1BA3B12500805035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E2FD7D1BA629E000AD0B82 /* PreProcessor.js in Resources */,
+				72A485B71BA3B12500805035 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		940C9B2B1B478F7700D12C77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +314,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		72A485AD1BA3B12500805035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A485B41BA3B12500805035 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		940C9B291B478F7700D12C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +347,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		72A485BA1BA3B12500805035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72A485B01BA3B12500805035 /* Share to Read */;
+			targetProxy = 72A485B91BA3B12500805035 /* PBXContainerItemProxy */;
+		};
 		940C9B461B478F7800D12C77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 940C9B2C1B478F7700D12C77 /* Reading List App */;
@@ -265,6 +360,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		72A485B51BA3B12500805035 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A485B61BA3B12500805035 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		940C9B381B478F7700D12C77 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +387,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		72A485BC1BA3B12500805035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "Share to Read/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.Reading-List-App.Share-to-Read";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		72A485BD1BA3B12500805035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Share to Read/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.Reading-List-App.Share-to-Read";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		940C9B4C1B478F7800D12C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +434,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -371,8 +501,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Reading List App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -381,8 +513,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Reading List App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -401,6 +535,7 @@
 				);
 				INFOPLIST_FILE = "Reading List AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reading List App.app/Reading List App";
 			};
@@ -416,6 +551,7 @@
 				);
 				INFOPLIST_FILE = "Reading List AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reading List App.app/Reading List App";
 			};
@@ -424,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		72A485BE1BA3B12500805035 /* Build configuration list for PBXNativeTarget "Share to Read" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A485BC1BA3B12500805035 /* Debug */,
+				72A485BD1BA3B12500805035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		940C9B281B478F7700D12C77 /* Build configuration list for PBXProject "Reading List App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
