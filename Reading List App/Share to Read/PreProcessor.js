@@ -12,7 +12,7 @@ PreProcessor.prototype = {
 	
 	run: function(arguments) {
 		arguments.completionFunction({ "url" : document.URL, "title" : document.title });
-//		arguments.completionFunction({"URL": document.URL, "pageSource": document.documentElement.outerHTML, "title": document.title, "selection": window.getSelection().toString()});
+		//arguments.completionFunction({"url": document.URL, "pageSource": document.documentElement.outerHTML, "title": document.title, "selection": window.getSelection().toString()});
 	},
 		
 	finalize: function(arguments) {

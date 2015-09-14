@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72394A3D1BA77AC200023291 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940C9B3B1B478F7700D12C77 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		72A485B41BA3B12500805035 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A485B31BA3B12500805035 /* ShareViewController.swift */; };
 		72A485B71BA3B12500805035 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A485B51BA3B12500805035 /* MainInterface.storyboard */; };
 		72A485BB1BA3B12500805035 /* Share to Read.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72A485B11BA3B12500805035 /* Share to Read.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -63,6 +64,8 @@
 		72A485B61BA3B12500805035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		72A485B81BA3B12500805035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72E2FD7C1BA629E000AD0B82 /* PreProcessor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = PreProcessor.js; sourceTree = "<group>"; };
+		72E2FD7E1BA7074800AD0B82 /* Share to Read.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Share to Read.entitlements"; sourceTree = "<group>"; };
+		72E2FD7F1BA7076B00AD0B82 /* Reading List App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Reading List App.entitlements"; sourceTree = "<group>"; };
 		901CFE061B8385920026E01C /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		901CFE081B83878E0026E01C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		901CFE0A1B8390170026E01C /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		72A485B21BA3B12500805035 /* Share to Read */ = {
 			isa = PBXGroup;
 			children = (
+				72E2FD7E1BA7074800AD0B82 /* Share to Read.entitlements */,
 				72A485B31BA3B12500805035 /* ShareViewController.swift */,
 				72A485B51BA3B12500805035 /* MainInterface.storyboard */,
 				72E2FD7C1BA629E000AD0B82 /* PreProcessor.js */,
@@ -141,6 +145,7 @@
 		940C9B2F1B478F7700D12C77 /* Reading List App */ = {
 			isa = PBXGroup;
 			children = (
+				72E2FD7F1BA7076B00AD0B82 /* Reading List App.entitlements */,
 				940C9B321B478F7700D12C77 /* AppDelegate.swift */,
 				90CAEF141B6932D900D6107C /* HomeTableViewController.swift */,
 				901CFE0A1B8390170026E01C /* WebViewController.swift */,
@@ -252,9 +257,21 @@
 				TargetAttributes = {
 					72A485B01BA3B12500805035 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = G7BAXFPMRZ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					940C9B2C1B478F7700D12C77 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = G7BAXFPMRZ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					940C9B431B478F7800D12C77 = {
 						CreatedOnToolsVersion = 6.4;
@@ -287,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72394A3D1BA77AC200023291 /* Images.xcassets in Resources */,
 				72E2FD7D1BA629E000AD0B82 /* PreProcessor.js in Resources */,
 				72A485B71BA3B12500805035 /* MainInterface.storyboard in Resources */,
 			);
@@ -390,6 +408,11 @@
 		72A485BC1BA3B12500805035 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_ENTITLEMENTS = "Share to Read/Share to Read.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "Share to Read/Info.plist";
@@ -397,6 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.Reading-List-App.Share-to-Read";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -404,11 +428,17 @@
 		72A485BD1BA3B12500805035 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_ENTITLEMENTS = "Share to Read/Share to Read.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Share to Read/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.Reading-List-App.Share-to-Read";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -501,11 +531,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Reading List App/Reading List App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Reading List App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -513,11 +547,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Reading List App/Reading List App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Reading List App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ios-developers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
